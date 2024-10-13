@@ -7,7 +7,7 @@ This project is a web application built with React and Vite, designed to interac
 To get started, clone this repository and install the dependencies:
 
 ```
-git clone <repository-url>
+git clone https://github.com/otoradze/tatum-hello.git
 cd <repository-directory>
 npm install
 
