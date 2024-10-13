@@ -1,5 +1,5 @@
 import { useLocation } from 'preact-iso';
-import './ErrorPage.css';
+import styles from './ErrorPage.module.scss';
 
 export const ErrorPage = () => {
   const location = useLocation();
@@ -9,13 +9,13 @@ export const ErrorPage = () => {
   };
 
   return (
-    <section className="not-found-container">
-      <div className="content-wrapper">
-        <h1 className="not-found-title">404</h1>
-        <p className="not-found-message">
+    <section className={styles.notFoundContainer}>
+      <div className={styles.contentWrapper}>
+        <h1 className={styles.notFoundTitle}>404</h1>
+        <p className={styles.notFoundMessage}>
           Oops! The page you're looking for doesn't exist.
         </p>
-        <button className="go-back-btn" onClick={handleGoBack}>
+        <button className={styles.goBackBtn} onClick={handleGoBack}>
           Take Me Home
         </button>
       </div>
