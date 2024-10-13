@@ -1,0 +1,130 @@
+@import '@shared/configs/vendor.module.scss';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background-color: var(--background-color);
+}
+
+.container {
+  background-color: var(--input-background);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 1.25rem;
+}
+
+.form {
+  margin-top: 1rem;
+}
+
+.input {
+  padding: 1rem;
+  width: 100%;
+  border: 0.2rem solid var(--primary-color);
+  border-radius: var(--border-radius);
+  background-color: var(--input-background);
+  font-size: 1rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease;
+}
+
+.label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+  display: block;
+  transition: color 0.2s;
+}
+
+
+.input:focus {
+  outline: none;
+  border-color: var(--secondary-color);
+}
+
+.inputError:focus {
+  border-color: #FF0000;
+}
+
+.inputErrorMessage {
+  color: #FF0000;
+}
+
+.loader {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border-left-color: #09f;
+  animation: spin 1s ease infinite;
+  margin: auto;
+  margin-top: 16px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.button {
+  margin-top: 1rem;
+  background-color: var(--primary-color);
+  color: var(--input-background);
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+  padding-inline: 1.5rem;
+  padding-block: 1rem;
+}
+
+.button:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-2px);
+}
+
+.description {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  margin-top: 2rem;
+  min-height: 2.25rem;
+}
+
+@media (max-width: 48rem) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  .button {
+    width: 100%;
+    padding: 0.75rem;
+  }
+}

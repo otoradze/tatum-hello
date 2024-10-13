@@ -1,0 +1,49 @@
+/* General container styling */
+.not-found-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('https://source.unsplash.com/1600x900/?lost');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.content-wrapper {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 15px;
+}
+
+.not-found-title {
+  font-size: 120px;
+  margin: 0;
+  font-weight: bold;
+  color: #ff6b6b;
+}
+
+.not-found-message {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #f1f1f1;
+}
+
+.go-back-btn {
+  background-color: #ff6b6b;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.go-back-btn:hover {
+  background-color: #ff4b4b;
+}
